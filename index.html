@@ -1,0 +1,285 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ti.jpg','imagenes/cl.jpg','imagenes/clim.jpg','imagenes/bbb.jpg','imagenes/coon.jpg','imagenes/med.jpg','imagenes/clii.jpg')">
+<div data-role="page" id="Principal" data-theme="a" >
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Dia de la Tierra </h1>
+   </div>
+   <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>Foto</h1>
+          <div>
+          <p> Imagen :
+          <br>
+          </div>
+        <div>
+            <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Dia de la tierra','','imagenes/ti.jpg',1)"><img src="imagenes/d.jpg" width="225" height="224" id="Dia de la tierra"></a></div>
+          </div>
+          </div>
+          
+       <div>  
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Día que se conmemora y Reflexion</h2>
+   <p>Se muestra la fecha de el dia en que se conmemora junto a una reflexion.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Porque se celebra esta fecha?</h2>
+<p>Muestra informacion </p>
+</a>
+</li>
+<li clas="ui-first-child ui-last-child">
+ <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados al planeta</h2>
+<p>Muestra informacion de los cuidados que se le tiene </p>
+  </a>
+  </li>
+
+     <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">    
+<h2>Cambios climaticos</h2>
+    <p>Muestra informacion de los efectos que percuten en la tierra</p>
+    </a>
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion Cinco</h4>
+  
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Dia en que se conmemora</h1>
+      </div>
+  <div data-role="content" align="center">
+ <div>
+ <div data-role = "main" class="ui-content" >
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Reflexion</h1>
+   <div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visorr/wowindex.html" style="width:960px;height:150px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<p>Ella depende de ti , tu dependes de ella , cuidala y valorara , mañana quiza sea tarde. Tu haces la direfencia. Ella te da todo a ti lo menos que puedes hacer es mostrarle lo  mucho que lo aprecias.Haz la diferencia!</p>
+</div>
+   <div>
+      <img src="imagenes/ja.jpg" width=">50%" height="50%" >
+    </div>
+  </div>
+  </div>
+<img src="imagenes/1.jpg" width="50%" height="50%">
+<p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos</p>
+    <!-- Start WOWSlider.com -->
+<iframe src="visorrr/indexwow.html" style="width:960px;height:150px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+    <img src="imagenes/dia.jpg" width="50%" height="50%">
+    <p>Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera. Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o , y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.</p>
+    <img src="imagenes/a.jpg" width="50%" height="50%">
+    <a href="http://www.un.org/es/events/motherearthday/">Dar click aqui </a>
+    <p>La idea de que la fecha fuera escogida para celebrar el centenario de Lenin, aún persiste en algunos cuarteles.</p>
+    </div>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion Cinco</h4>
+  
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Porque se celebra esta fecha?</h1>
+      </div>
+  <div data-role="content" align="center">
+ <div>
+<img src="imagenes/x.jpg" width="40%" height="40%">
+<p>Las Naciones Unidas proponen generar "Ciudades Verdes": "El objetivo del Día de la Tierra es movilizar a millones de personas para lograr un medio ambiente saludable y sostenible. En la actualidad, más de la mitad de la población mundial vive en las ciudades. A medida que la población urbana crece y los efectos del cambio climático empeoran, nuestras ciudades deben evolucionar. 
+Es hora de que invirtamos en energías renovables y en eficiencia energética, reconstruyamos nuestras ciudades y empecemos a resolver el problema del cambio climático". </p>
+   <img src="imagenes/h.jpg" width="28%" height="48%">
+   <p><em>La intensión es sensibilizar a la humanidad de que es parte del planeta Tierra y sus huellas marcarán el destino del mundo, por eso reducir (el consumo), reciclar y reutilizar objetos es la forma en que cada uno día a día puede colaborar para evitar la contaminación ambiental.</em></p>
+        </div>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion Cinco</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div> 
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Cuidados al planeta</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<div data-role = "main" class="ui-content" >
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Instrucciones Básicas para el Cuidado del Planeta</h1>
+   <div>
+   <img src="imagenes/in.jpg" width="350" height="633" alt="cuidado">
+<p>Una de nuestras más grandes responsabilidades es el cuidado del lugar donde vivimos, donde vivirán nuestros hijos y nietos. Trabajemos por esta oportunidad que tenemos y que además nos hace crecer como individuos.<br>
+     -No tires ni dejes desechos ni basura en el suelo<br>
+-Utiliza el agua responsablemente<br>
+-Inicia un huerto en casa<br>
+-Desconecta los aparatos eléctricos que no uses<br>
+-Separa los residuos sólidos en orgánicos e inorgánicos<br>
+-Usa focos ahorradores<br>
+Reduce tu consumo, recicla y reutiliza todo lo que puedas<br>
+-Adquiere productos locales<br>
+-Fomenta el comercio justo<br>
+-Transpórtate en bici<br></p>
+</div>
+   <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Cuidado del planeta','','imagenes/coon.jpg',1)"><img src="imagenes/ccc.jpg" width="376" height="389" id="Cuidado del planeta"></a> </div>
+  </div>
+  </div>
+  
+  <div data-role = "main" class="ui-content" >
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Consejos para cuidar el planeta</h1>
+   <div>
+   <p>-¡Cierra la llave! Evita mantener el grifo abierto mientras te cepillas los dientes, cuando te enjabones en la noche igual cierra la llave. No abras la válvula al máximo sin necesidad de tanta presión. Y comprueba que los grifos no goteen cuando están cerrados.
+   <br>
+   - Compra papel reciclado: Es una buena manera de salvar mucho árboles, puede ser papel higiénico, servilletas, toalla, papel para escribir cartas, si estás organizando tu boda elige tarjetas elaboradas en papel reciclado y naturaleza muerta.<br>
+   -. Apaga los aparatos eléctricos mientras no los utilices: Usa responsablemente el aire acondicionado, el televisor, la computadora, no mantengas los cargadores conectados si tu celular ya tiene la batería completa.<br>
+   -Utiliza bombillos ahorradores: Además de cuidar el ambiente tu recibo de energía eléctrica también disminuirá.<br>
+    -Cuidado con las bolsas. El plástico con el que elaboran las bolsas tardan cientos de años en degradarse, usa bolsas biodegradables en su lugar o bolsas de tela reutilizables.<br>
+    -Si hay luz natural no ocupas encender el bombillo: Abre las cortinas para que entre la luz y evita usar energía en el día sino la ocupas.<br></p>
+   </div>
+   <div>
+ <img src="imagenes/coon.jpg" width=">50%" height="50%" >
+ </div>
+ </div>
+ </div>
+ 
+ <div data-role = "main" class="ui-content" >
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>CUIDADOS DEL MEDIO AMBIENTE</h1>
+   <div>
+   <p>- Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños que te venden en la publicidad muchas veces engañosa.<br>
+- Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.<br>
+- Evita las latas de bebidas, vale más el envase que su contenido y apenas se recuperan. La energía necesaria para producir y transportar una lata equivale a la mitad del bote lleno de petróleo.<br>
+- La energía que producen las pilas es más de 600 veces más cara que la de la red. Conecta los aparatos a la red siempre que esto sea posible. Si te es imprescindible usar pilas (nunca tires las usadas a la basura), procura que sean recargables.<br>
+- Desconecta los aparatos eléctricos de la red cuando no están funcionando. Algunos aparatos (como televisores). <br></p>
+   </div>
+   <div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Medio ambiente','','imagenes/med.jpg',1)"><img src="imagenes/connn.jpg" width="638" height="479" id="Medio ambiente"></a> </div>
+ </div>
+ <!--</div>borrar este-->
+ </div>
+ 
+ <div data-role = "main" class="ui-content" >
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Las tres “R”: reducir, reutilizar, reciclar.</h1>
+   <div>
+ <p>La primera es reducir. Es decir, utilizar la menor cantidad posible de todo.En primer lugar, debemos cuidar los recursos naturales que tenemos en nuestro hogar. Empezando por el agua. A la hora de lavarnos los dientes, debemos cerrar la canilla, así no se pierde agua potable innecesariamente.<br>
+   -La segunda de las “R” es reutilizar, aprovechar al máximo las cosas antes de tirarlas a la basura y seguir generando contaminación. <br>
+   -Por último, cabe destacar la importancia de reciclar, que es el proceso por el cual se le realiza un tratamiento a los objetos desechados vuelvan a ser utilizados. Para esto, resulta fundamental separar la basura según el tipo, así el reciclaje es más fácil.<br></p>
+   </div>
+   <div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('r','','imagenes/bbb.jpg',1)"><img src="imagenes/bb.jpg" width="230" height="189" id="r"></a> </div>
+ </div>
+ 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion Cinco</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Cambios climaticos</h1>
+      </div>
+  <div data-role="content" align="center">
+ <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cambio','','imagenes/clii.jpg',1)"><img src="imagenes/cli.jpg" width="980" height="994" id="cambio"></a> <img src="imagenes/ll.jpg" width="50%" height="50%">
+<p>En las revistas científicas, “calentamiento global” se refiere a aumentos de temperaturas superficiales, mientras que “cambio climático” incluye al calentamiento global y todos los otros aspectos sobre los que influye un aumento de los gases de efecto invernadero.
+La evidencia se basa en observaciones de los aumentos de temperatura del aire y de los océanos, el derretimiento de hielos y glaciares en todo el mundo y el aumento de los niveles de mar a nivel mundial y otras señales claras de cambio.
+Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera. Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o , y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.</p>
+    <img src="imagenes/aaa.jpg" width="50%" height="50%">
+    <a href="http://http://cambioclimaticoglobal.com/que-es-el-cambio-climatico">Dar click aqui </a>
+    <p>La idea de que la fecha fuera escogida para celebrar el centenario de Lenin, aún persiste en algunos cuarteles.</p>
+    </div>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion Cinco</h4>
+  
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
